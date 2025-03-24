@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>reads</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <style>
+    body {
+      font-family: serif;
+      background-color: #f9f7f2;
+      color: #415a16;
+      margin: 0;
+      padding: 140px 20px 100px 20px;
+      text-align: center;
+    }
+
+    .text {
+      font-size: 38px;
+      line-height: 1.6;
+      max-width: 960px;
+      margin: 0 auto 60px auto;
+    }
+
+    .clover {
+      width: 160px;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      animation: spin 8s linear infinite;
+    }
+
+    .clover:hover {
+      transform: scale(1.07);
+      filter: brightness(1.05);
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .text {
+        font-size: 28px;
+      }
+      .clover {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="text">
+    one of my goals this year is to rekindle my reading habits.<br>
+    to keep track (and stay motivated!) i’ve made a goodreads.<br>
+    you can check it out here.
+  </div>
+  <a href="https://www.goodreads.com/user/show/185786129-maria" target="_blank">
+    <img src="clover.png" alt="Goodreads link" class="clover" />
+  </a>
+</body>
+</html>

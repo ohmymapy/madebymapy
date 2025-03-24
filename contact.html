@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>contact-me</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <style>
+    body {
+      font-family: serif;
+      background-color: #f9f7f2;
+      color: #215131;
+      margin: 0;
+      padding: 120px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    h1 {
+      font-size: 72px;
+      margin: 0;
+    }
+
+    .subtext {
+      font-style: italic;
+      font-size: 20px;
+      margin-top: 4px;
+    }
+
+    .links {
+      margin-top: 130px;
+      font-size: 48px;
+      text-align: center;
+      align-self: center;
+    }
+
+    .links a {
+      color: #215131;
+      text-decoration: none;
+      margin: 0 20px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .links a:hover {
+      color: #15371f;
+      text-decoration: underline;
+    }
+
+    .frog {
+      position: absolute;
+      right: 40px;
+      bottom: 40px;
+      width: 240px;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 48px;
+      }
+      .links {
+        font-size: 32px;
+        margin-top: 80px;
+      }
+      .links a {
+        margin: 0 10px;
+      }
+      .frog {
+        width: 160px;
+        right: 20px;
+        bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Let’s connect!</h1>
+  <div class="subtext">i’d love to hear from you :)</div>
+
+  <div class="links">
+    <a href="https://github.com/ohmymapy" target="_blank">github</a> · 
+    <a href="https://www.linkedin.com/in/maria-le%C3%B3n-campos" target="_blank">linkedin</a> · 
+    <a href="mailto:mp.leoncampos@icloud.com">email</a>
+  </div>
+
+  <img src="frog-clover.png" alt="Frog holding clover" class="frog">
+</body>
+</html>
